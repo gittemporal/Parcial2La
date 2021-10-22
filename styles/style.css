@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  width: 100vw;
+  height: 100vh;
+}
+body #renderScene {
+  display: flex;
+  position: fixed;
+  flex-flow: column wrap;
+  padding: 10px;
+  z-index: 1;
+}
+body #contentModels {
+  display: flex;
+  position: fixed;
+  background: #303030dc;
+ /*  background-image: url("http://i.ebayimg.com/images/i/291367813894-0-1/s-l1000.jpg") ; */
+  /*   background-image: cross-fade(); */
+  background-size: 100%;
+  background-position: 0%;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  z-index: 0;
+  width: 20vw;
+  height: 100vh;
+}
+body #content {
+  display: flex;
+  position: fixed;
+  background: #000000;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+}
+body #contentTexture {
+  display: flex;
+  position: fixed;
+ /*  background: #c60f0f; */
+  background-image: url(https://wallpapercave.com/wp/wp1930995.jpg);
+  background-position: 0%;
+  
+  background-size: 100%;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  z-index: 2;
+  width: 79.5vw;
+  height: 30vh;
+}
+
+
+body #contentModels .btnOptionModels {
+  border: 2px solid #4b4b4b;
+  width: 18vw;
+  height: 20vh;
+  margin: 2vw;
+  border-radius: 15px;
+  padding: 15px;
+  color: rgb(220, 63, 63);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+body #contentModels .btnOptionModels:hover {
+  width: 17vw;
+}
+
+body #contentTexture .btnOptionTexture {
+  border: 0px solid #4b4b4b;
+  width: 1vw;
+  height: 1.4vh;
+  margin: 2vw;
+  border-radius: 15px;
+  padding: 15px;
+  color: rgb(188, 25, 25);/*  // color letras */
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+body #contentTexture .btnOptionTexture:hover {
+  width: 3vw;
+  height: 2vw;
+}
+
+.custom3 {
+  background-image: url(https://tse3.mm.bing.net/th?id=OIP.9q4VzYX8SlDgPayA8NEl8gHaE8&pid=Api);
+  background-size: 100%;
+  background-position:0%;
+
+}
+.custom1 {
+  background-image: url(https://images-na.ssl-images-amazon.com/images/I/41bn4H1I8mL.jpg);
+  
+  background-size: 100%;
+  background-position:0%;
+  
+
+}
+.custom2 {
+  background-image: url(http://www.team-bhp.com/forum/attachments/technical-stuff/442948-superb-car-cleaning-polishing-detailing-guide-19102010073.jpg);
+background-size: 100%;
+background-position:0%;
+
+
+}
+.logo{
+  position: absolute;
+  bottom: 75%; 
+}
+.background{
+  filter:sepia(20%);
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(http://hdqwalls.com/download/1/aston-martin-db9.jpg);   
+
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+ background-repeat: no-repeat;
+ background-size: 120%;
+ color: #ffffff;
+ padding: 0 8%;
+ z-index: -1;
+
+}
+body #content .btnone {
+  font-weight: 700;
+  border: 3px solid #ffffff;
+  width: 20vw;
+  height: 2vh;
+  margin: 3vw;
+  padding: 10px;
+  color: #ffffff;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  filter: brightness(100%);
+}
+body #content .btnone:hover {
+  width: 24vw;
+}
+
+body #content .btnone .title {
+  font-size: 150%;
+  margin-bottom: 2px;
+}
+.modelOne{
+  background-image: url(https://c.tenor.com/5Ibq_GrXoC4AAAAC/lamborghini-car.gif);
+  background-position: 0%;
+  background-size: 140%;
+}
+.modelTwo{
+  background-image: url(https://media.giphy.com/media/iaPdzSxDrbww8/giphy.gif);
+  background-position: center;
+  background-size: 130%;
+  
+   background-position-x: 0;
+  background-position-x: 0;
+}
+.modelThree{
+  background-image: url(https://64.media.tumblr.com/5c09a71d0defc627774c5854d2b90c5e/tumblr_pf8a97ojaP1qms0coo1_500.gifv);
+  background-position: center;
+  background-size: 120%;
+  
+  background-position-x: 0;
+  background-position-x: 0;
+}
+.modelFour{
+  
+  background-image: url(https://64.media.tumblr.com/0d2f34351572b2b861c6c9c4e235e19c/tumblr_msgp7bQV5v1s6stdwo1_500.gif);
+  background-position: center;
+  background-size: 50;
+  background-position-x: 0;
+  background-position-x: 0;
+}

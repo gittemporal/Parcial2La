@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Dos 51831</title>
+  <script type="module" src="./src/app.js"></script>
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+  <div id="renderScene">
+    <div id="contentModels">
+    <div class="btnOptionModels modelOne" data-size="1">
+    </div>
+    <div class="btnOptionModels modelTwo" data-size="4">
+    </div>
+    <div class="btnOptionModels modelThree" data-size="7">
+    </div>
+    <div class="btnOptionModels modelFour" data-size="10">
+    </div>
+  </div>
+  <div id="contentTexture">
+    <div class="btnOptionTexture custom1" data-size="1">
+    </div>
+    <div class="btnOptionTexture custom2" data-size="2">
+    </div>
+    <div class="btnOptionTexture custom3" data-size="3">
+    </div>
+  </div>
+  </div>
+  <div id="content">
+    <div class = logo>
+      <img src="/assets/astonmartin.png" alt="astonmartin Logo" width="250" height="190">
+  </div>
+  <div class ="background">
+  </div>
+      <div class="btnone">
+      <div class="title">Garaje</div>
+    </div>
+  </div>
+
+
+  <script type="module">
+    import {main, changeModel, changeTexture} from './src/app.js';
+
+    const pass = document.querySelector('.btnone');
+    const models = document.querySelectorAll('.btnOptionModels');
+    const textures = document.querySelectorAll('.btnOptionTexture');
+    globalThis.name = 1;
+
+    models.forEach(optionSelected => {
+      optionSelected.onclick = function(){
+        const optionName = this.dataset.size;
+        name = optionName;
+        changeModel(name);
+      }
+    });
+    textures.forEach(optionSelected => {
+      optionSelected.onclick = function(){
+        const textureoption = this.dataset.size;
+        const texture = textureoption;
+        changeTexture(name,texture);
+      }
+    });
+
+
+
+    pass.onclick = function() {
+      toogleContent();  
+      main();
+    }
+
+
+    function toogleContent (){
+      content.style.display = content.style.display == 'none' ? 'flex' : 'none';
+    }
+  </script>
+</body>
+
+</html>
